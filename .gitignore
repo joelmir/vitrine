@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.orig
 *.pyc
 *.rej
@@ -13,3 +14,9 @@ project/media/uploads
 tmp
 settings.py
 *~
+=======
+*.log
+*.pot
+*.pyc
+local_settings.py
+>>>>>>> 2adc587da6e982e9289d511678d6a0fe54777a71
