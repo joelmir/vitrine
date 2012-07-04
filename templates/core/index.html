@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--
+ --PATA TESTE
+**** USANDO DOCTYPE HTML 5 -- SE HOUVER ALGUM PROBLEMA/INCONPATIBILIDADE QUE NAO POSSA SER SOLUCIONADA, USAR O DOCTYPE ABAIXO
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+ --ORIGINAL DESTE TEMPLATE
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+-->
+
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        {% block titulo %}Vitrine{% endblock titulo %}
+    </title>
+    <link rel="stylesheet" type="text/css" href="/media/css/core/base.css" />
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/media/css/core/base_ie.css"/>
+    <![endif]-->
+    {% comment %}
+        JS maluco nativo do template, ver para que serve
+        <script type="text/javascript" src="/media/js/base/base.js"></script>
+    {% endcomment %}
+
+</head>
+<body>
+
+<!-- CONTEUDO DA PAGINA -->
+<div id="main_container">
+
+    <!-- HEADER -->
+    <div id="header">
+    {% block header %}
+        <div class="top_right">
+        {% block top_right %}
+            <!--<div class="languages">-->
+                <!--<div class="lang_text">Languages:</div>-->
+            <!--</div>-->
+            <div class="big_banner">
+                baner
+                <!-- BANNER TOPO -->
+            </div>
+        {% endblock top_right %}
+        </div>
+
+        <div id="logo">
+            {% block top_logo %}
+            <a href="/">
+                <img src="" style="border:1px #000 solid;width:200px;height:50px;" alt="imagem logo" title="imagem logo" border="0" width="182" height="85" />
+            </a>
+            {% endblock top_logo %}
+        </div>
+    {% endblock header %}
+    </div>
+    <!-- END HEADER -->
+
+    <!-- CONTEUDO MENU -->
+    <div id="main_content">
+    {% block menu_content %}
+        <!-- MENU TAB -->
+
+        {% block menu_principal %}
+        
+        {% endblock menu_principal %}
+        <!-- FIM MENU TAB -->
+
+        <!-- SEARCH -->
+        <div class="crumb_navigation">
+           Navigation: <span class="current">Home</span>
+        </div>
+    {% endblock menu_content %}
+    </div>
+    <!-- END MENU TAB -->
+
+    <!-- CONTEUDO MENU LATERAL esquerda-->
+    <div class="left_content">
+    {% block left_content %}
+
+        <div class="title_box">Categories</div>
+
+        <!-- MENU LATERAL -->
+        <ul class="left_menu">
+            <li class="odd"><a href="../../template_base/details.html">Power Tools</a></li>
+            <li class="even"><a href="../../template_base/details.html">Air Tools</a></li>
+            <li class="odd"><a href="../../template_base/details.html">Hand Tools</a></li>
+        </ul> 
+        <!-- FIM MENU LATERAL -->
+
+        <!-- OFERTAS BARRA LATERAL -->
+        <div class="title_box">Produtos Especiais</div>
+        <div class="border_box">
+            <div class="product_title"><a href="../../template_base/details.html">Nome do Produto</a></div>
+            <div class="product_img"><a href="../../template_base/details.html">Imagem do Produto</a></div>
+            <div class="prod_price">
+                <span class="reduce">350$</span> <!--PREÇO RISCADO -->
+                <span class="price">270$</span>  <!-- PREÇO OFICIAL -->
+            </div>
+        </div>
+
+        <div class="title_box">Newsletter</div>
+
+        <div class="border_box">
+            <input type="text" name="newsletter" class="newsletter_input" value="your email"/>
+            <a href="#" class="join">subscribe</a>
+        </div>
+
+        <div class="banner_adds">
+            <a href="#">Imagen banner 2</a>
+        </div>
+        <!-- FIM OFERTAS BARRA LATERAL -->
+    {% endblock left_content %}
+    </div>
+    <!-- FIM CONTEUDO MENU LATERAL -->
+
+
+    <!-- CONTEUDO CENTRAL -->
+    <div class="center_content">
+    {% block center_content %}
+        <!-- DIV DE OFERTA EM DESTAQUE,
+            ABAIXO DO MENU PRINCIPAL AO CENTRO DA PAGINA
+        -->
+        <!--
+        <div class="oferta">
+
+            <div class="oferta_details">
+                <div class="oferta_title">Power Tools BST18XN Cordless</div>
+                <div class="oferta_text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </div>
+                <a href="details.html" class="prod_buy">details</a>
+            </div>
+        </div>
+        -->
+
+        <!-- TITULO DO AGRUPAMENTO -->
+        <div class="center_title_bar">Latest Products</div>
+
+        <!-- BOX DO PRODUTO -->
+        <div class="prod_box">
+
+            <div class="center_prod_box">
+                <div class="product_title"><a href="../../template_base/details.html">Makita 156 MX-VL</a></div>
+                <div class="product_img"><a href="../../template_base/details.html"><img src="../../media/imagens/base/p1.jpg" alt="" title="" border="0" /></a></div>
+                <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+            </div>
+
+            <div class="prod_details_tab">
+            <a href="buy.html" class="prod_buy">Add to Cart</a>
+            <a href="../../template_base/details.html" class="prod_details">Details</a>
+            </div>
+        </div>
+    
+        <div class="prod_box">
+
+            <div class="center_prod_box">
+                 <div class="product_title"><a href="../../template_base/details.html">Bosch XC</a></div>
+                 <div class="product_img"><a href="../../template_base/details.html"><img src="../../media/imagens/base/p2.jpg" alt="" title="" border="0" /></a></div>
+                 <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+            </div>
+
+            <div class="prod_details_tab">
+            <a href="buy.html" class="prod_buy">Add to Cart</a>
+            <a href="../../template_base/details.html" class="prod_details">Details</a>
+            </div>
+        </div>
+ 
+
+        <div class="prod_box">
+
+            <div class="center_prod_box">
+                 <div class="product_title"><a href="../../template_base/details.html">Lotus PP4</a></div>
+                 <div class="product_img"><a href="../../template_base/details.html"><img src="../../media/imagens/base/p4.jpg" alt="" title="" border="0" /></a></div>
+                 <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+            </div>
+
+            <div class="prod_details_tab">
+            <a href="buy.html" class="prod_buy">Add to Cart</a>
+            <a href="../../template_base/details.html" class="prod_details">Details</a>
+            </div>
+        </div>
+ 
+        <div class="prod_box">
+
+            <div class="center_prod_box">
+                 <div class="product_title"><a href="../../template_base/details.html">Makita 156 MX-VL</a></div>
+                 <div class="product_img"><a href="../../template_base/details.html"><img src="../../media/imagens/base/p3.jpg" alt="" title="" border="0" /></a></div>
+                 <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+            </div>
+
+            <div class="prod_details_tab">
+            <a href="buy.html" class="prod_buy">Add to Cart</a>
+            <a href="../../template_base/details.html" class="prod_details">Details</a>
+            </div>
+        </div>
+    
+        <div class="prod_box">
+
+            <div class="center_prod_box">
+                 <div class="product_title"><a href="../../template_base/details.html">Bosch XC</a></div>
+                 <div class="product_img"><a href="../../template_base/details.html"><img src="../../media/imagens/base/p5.jpg" alt="" title="" border="0" /></a></div>
+                 <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+            </div>
+
+            <div class="prod_details_tab">
+            <a href="buy.html" class="prod_buy">Add to Cart</a>
+            <a href="../../template_base/details.html" class="prod_details">Details</a>
+            </div>
+        </div>
+
+
+        <div class="prod_box">
+
+            <div class="center_prod_box">
+                 <div class="product_title"><a href="../../template_base/details.html">Lotus PP4</a></div>
+                 <div class="product_img"><a href="../../template_base/details.html"><img src="../../media/imagens/base/p6.jpg" alt="" title="" border="0" /></a></div>
+                 <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+            </div>
+
+            <div class="prod_details_tab">
+            <a href="buy.html" class="prod_buy">Add to Cart</a>
+            <a href="../../template_base/details.html" class="prod_details">Details</a>
+            </div>
+        </div>
+
+
+        <!-- TITULO DO AGRUPAMENTO -->
+        <div class="center_title_bar">TeTeste Titulo</div>
+
+        <!-- BOX DO PRODUTO -->
+        <div class="prod_box">
+
+            <div class="center_prod_box">
+                <div class="product_title"><a href="../../template_base/details.html">Makita 156 MX-VL</a></div>
+                <div class="product_img"><a href="../../template_base/details.html"><img src="../../media/imagens/base/p1.jpg" alt="" title="" border="0" /></a></div>
+                <div class="prod_price"><span class="reduce">350$</span> <span class="price">270$</span></div>
+            </div>
+
+            <div class="prod_details_tab">
+            <a href="buy.html" class="prod_buy">Add to Cart</a>
+            <a href="../../template_base/details.html" class="prod_details">Details</a>
+            </div>
+        </div>
+    {% endblock center_content %}
+    </div>
+    <!-- FIM CONTEUDO CENTRAL -->
+
+
+    <!-- CONTEUDO BARRA LATERAL DIREITA -->
+    <div class="right_content">
+
+        <!-- BLOCO DA BUSCA NO SITE -->
+        <div class="title_box">Busca</div>
+        <div class="border_box">
+            <input type="text" name="newsletter" class="newsletter_input" value="keyword"/>
+            <a href="#" class="join">Botão Busca</a>
+        </div>
+
+        <div class="shopping_cart">
+            <div class="title_box">Shopping cart</div>
+        </div>
+
+        <!-- BANNER MENU LATERAL DIREITA -->
+        <div class="banner_adds" style="border:1px #000 solid;">
+            IMAGEM BANNER LATERAL DIREITA
+        </div>
+
+    </div>
+    <!-- FIM CONTEUDO BARRA LATERAL DIREITA -->
+
+    <!-- RODAPE -->
+    <div class="footer">
+        <div class="left_footer">
+            logo da desenvolvedora
+        </div>
+
+        <div class="center_footer">
+            Todos os direitos reservados 2012.<br>
+            mini logo
+        </div>
+
+        <!-- mini menu rapido -->
+        <div class="right_footer">
+            <a href="/">home</a>
+            <a href="../../template_base/details.html">about</a>
+        </div>
+    </div>
+    <!-- FIM RODAPE -->
+
+</div>
+<!-- FIM CONTEUDO DA PAGINA -->
+
+</body>
+</html>

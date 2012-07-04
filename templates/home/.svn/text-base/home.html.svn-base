@@ -1,0 +1,8 @@
+<!--
+#Autor:guerra
+#Data: 04/02/12
+#Ultima alteracao:
+-->
+
+{% extends "core/base.html" %}
+HOME PAGE

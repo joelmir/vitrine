@@ -1,0 +1,18 @@
+<!--
+#Autor:guerra
+#Data: 04/02/12
+#Ultima alteracao:
+-->
+
+{% block menu_principal %}
+<div id="menu_tab">
+    <ul class="menu">
+
+        {% for menu, endereco in lista_menu_principal %}
+            <li><a href={{ endereco }} class="nav"> {{ menu }} </a></li>
+        {% endfor %}
+
+    </ul>
+</div>
+{% endblock menu_principal %}
+

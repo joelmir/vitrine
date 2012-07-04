@@ -1,0 +1,34 @@
+<!--
+#Autor:guerra
+#Data: 04/02/12
+#Ultima alteracao:
+-->
+
+{% block menu_principal %}
+<div id="menu_tab">
+    <ul class="menu">
+
+        {% for menu in lista_menu_principal %}
+            <li><a href="index.html" class="nav"> {{ menu }} </a></li>
+        {% endfor %}
+
+    </ul>
+</div>
+{% endblock menu_principal %}
+{# FIM MENU TAB #}
+{% comment %}
+
+    <li><a href="index.html" class="nav">  Home </a></li>
+    <li class="divider"></li>
+    <li><a href="#" class="nav">Products</a></li>
+    <li class="divider"></li>
+    <li><a href="#" class="nav">Specials</a></li>
+    <li class="divider"></li>
+    <li><a href="#" class="nav">My account</a></li>
+    <li class="divider"></li>
+    <li><a href="#" class="nav">Sign Up</a></li>
+    <li class="divider"></li>
+    <li><a href="#" class="nav">Shipping </a></li>
+    <li class="divider"></li>
+    <li><a href="../../template_base/contact.html" class="nav">Contact Us</a></li>
+{% endcomment %}

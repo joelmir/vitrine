@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/Vitrine/!svn/ver/6/trunk/vitrine/home
+END
+home_forms.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Vitrine/!svn/ver/6/trunk/vitrine/home/home_forms.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/Vitrine/!svn/ver/6/trunk/vitrine/home/__init__.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/Vitrine/!svn/ver/6/trunk/vitrine/home/models.py
+END
+home_views.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Vitrine/!svn/ver/6/trunk/vitrine/home/home_views.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/Vitrine/!svn/ver/6/trunk/vitrine/home/urls.py
+END
+home_models.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Vitrine/!svn/ver/6/trunk/vitrine/home/home_models.py
+END

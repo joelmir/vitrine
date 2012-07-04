@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/Vitrine/!svn/ver/7/trunk/vitrine/core
+END
+core_views.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/Vitrine/!svn/ver/6/trunk/vitrine/core/core_views.py
+END
+context_processors.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/Vitrine/!svn/ver/6/trunk/vitrine/core/context_processors.py
+END
+core_models.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/Vitrine/!svn/ver/7/trunk/vitrine/core/core_models.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/Vitrine/!svn/ver/4/trunk/vitrine/core/__init__.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/Vitrine/!svn/ver/4/trunk/vitrine/core/models.py
+END
